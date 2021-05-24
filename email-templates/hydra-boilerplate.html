@@ -19,6 +19,8 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 
+
+        <!-- Disable phone numbers, dates, addresses and emails apperaing as hypertext links -->
         <meta name="x-apple-disable-message-reformatting">
         <meta name="format-detection" content="telephone=no">
         <meta name="format-detection" content="date=no">
@@ -26,19 +28,6 @@
         <meta name="format-detection" content="email=no">
         <title>Hydra Email Boilerplate </title>
 
-        <!--[if mso]>
-          <style type="text/css">
-            body, table, td, .mobile-text {
-            font-family:Arial, Helvetica, sans-serif !important;
-            }
-          </style>
-          <xml>
-            <o:OfficeDocumentSettings>
-              <o:AllowPNG/>
-              <o:PixelsPerInch>96</o:PixelsPerInch>
-            </o:OfficeDocumentSettings>
-          </xml>
-        <![endif]-->
         <style type="text/css">
             @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300&display=swap');
 
@@ -132,11 +121,19 @@
                 .full-width {
                     width: 100% !important;
                 }
+
+                .mobile-text {
+                    font-size: 16px !important;
+                    line-height: 22px !important;
+                }
             }
 
 
 
             /* Dark Mode Support */
+
+            /* [ light | dark ]+ Indicates that the element is aware of and can handle the listed color schemes,
+        and expresses an ordered preference between them  (remove comment) */
             :root {
                 color-scheme: light dark;
                 supported-color-schemes: light dark;
@@ -210,29 +207,60 @@
 
             /* END  Dark Mode Support */
         </style>
+        <!--[if (gte mso 9)|(IE)]>
+		<style type="text/css">
+			table {border-collapse: collapse !important;}
+		</style>
+	<![endif]-->
+
+
+        <!-- [if mso]>
+    <style type="text/css">
+        body, table, td, .mobile-text {
+            font-family: 'Roboto', Helvetica, Verdana, Arial, sans-serif !important;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+    </style>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG />
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif] -->
+
     </head>
 
     <body bgcolor="#f1f0f0" class="darkmode-bg"
         style="background-color:#f1f0f0; margin:0; padding:0;-webkit-font-smoothing:antialiased;width:100% !important;-webkit-text-size-adjust:none;"
         topmargin="0">
-        <div style="font-size:1px; color:#f1f0f0; display:none; overflow:hidden; visibility:hidden;">See the
-            members-only benefits you&#8217;ve already got access to.
+
+        <div class="preview-text"
+            style="font-size:1px; color:#f1f0f0; display:none; overflow:hidden; visibility:hidden;">Preview text
+            consists of 35 to 90 characters
             &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
         </div>
+
         <table width="100%" class="darkmode-bg" bgcolor="#f1f0f0" style="background-color:#f1f0f0;" border="0"
             cellpadding="0" cellspacing="0" role="presentation">
             <tr>
                 <td>
-                    <table class="full-width spacer" align="center" width="600" border="0" cellpadding="0"
-                        cellspacing="0" role="presentation" style="width:600px;">
-                        <tr>
-                            <td class="web-only" align="right" style="  padding-top:32px; padding-bottom:9px;">
-                                <a href="https://www.mailhydra.com/" alias="Read Online" target="_blank"
-                                    style="color:#2f4eae; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:11px; line-height:13px;">View
-                                    online</a>
-                            </td>
-                        </tr>
-                    </table>
+                    <center>
+                        <table class="full-width spacer darkmode-bg" bgcolor="#f1f0f0" style="background-color:#f1f0f0;"
+                            align="center" width="600" border="0" cellpadding="0" cellspacing="0" role="presentation"
+                            style="width:600px;">
+                            <tr>
+                                <td class="web-only" align="right" style="  padding-top:32px; padding-bottom:9px;">
+                                    <a href="https://www.mailhydra.com/" alias="Read Online" target="_blank"
+                                        style="color:#2f4eae; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:11px; line-height:13px;">View
+                                        online</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </center>
                 </td>
             </tr>
 
@@ -320,7 +348,7 @@
             </tr>
 
             <tr>
-                <td class="web-only " align="right" style="  padding-top:32px; padding-bottom:9px;">
+                <td class="web-only" align="right" style=" padding-top:32px; padding-bottom:9px;">
                     &nbsp;
                 </td>
             </tr>
@@ -330,7 +358,8 @@
                     <table class="full-width spacer" align="center" width="600" border="0" cellpadding="0"
                         cellspacing="0" role="presentation" style="width:600px;">
                         <tr>
-                            <td class="mobile-only" align="right" style="padding-top:32px; padding-bottom:9px; ">
+                            <td class="mobile-only" align="right"
+                                style="padding-top:32px; padding-bottom:9px; display:none;">
                                 <a href="https://www.mailhydra.com/" alias="Read Online" target="_blank"
                                     style="color:#2f4eae; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:11px; line-height:13px; ">View
                                     online</a>
