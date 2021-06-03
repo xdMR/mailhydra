@@ -19,26 +19,15 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 
+
+        <!-- Disable phone numbers, dates, addresses and emails apperaing as hypertext links -->
         <meta name="x-apple-disable-message-reformatting">
         <meta name="format-detection" content="telephone=no">
         <meta name="format-detection" content="date=no">
         <meta name="format-detection" content="address=no">
         <meta name="format-detection" content="email=no">
-        <titleMailHydra - Welcome</title>
+        <title>Hydra Email Boilerplate</title>
 
-        <!--[if mso]>
-          <style type="text/css">
-            body, table, td, .mobile-text {
-            font-family:Arial, Helvetica, sans-serif !important;
-            }
-          </style>
-          <xml>
-            <o:OfficeDocumentSettings>
-              <o:AllowPNG/>
-              <o:PixelsPerInch>96</o:PixelsPerInch>
-            </o:OfficeDocumentSettings>
-          </xml>
-        <![endif]-->
         <style type="text/css">
             @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,300&display=swap');
 
@@ -103,7 +92,7 @@
 
 
 
-            .mobile-only{
+            .mobile-only {
                 display: none;
             }
 
@@ -151,14 +140,14 @@
 
 
             /* [ light | dark ]+ Indicates that the element is aware of and can handle the listed color schemes,
-        and expresses an ordered preference between them  (remove comment) */
+    and expresses an ordered preference between them  (remove comment) */
             @media (prefers-color-scheme: dark) {
 
                 /* Dark Mode Background Color */
                 center,
                 body,
                 .darkmode-bg {
-                    background: #090b11  !important;
+                    background: #090b11 !important;
                     color: #ffffff !important;
                 }
 
@@ -175,7 +164,7 @@
                 b,
                 td {
                     color: #c4bac1 !important;
-                     }
+                }
 
                 h1,
                 h2 {
@@ -226,55 +215,105 @@
                     color: #667fff !important;
                     text-decoration: none;
                 }
-                a:hover{
+
+                a:hover {
                     border-bottom: 1px solid #667fff !important;
                 }
 
-                .legal, .legal td{
-                    background:  #0d1019  !important;
+                .legal,
+                .legal td {
+                    background: #0d1019 !important;
                 }
-                .legal td{
-                    color: #2d333a  !important;
+
+                .legal td {
+                    color: #2d333a !important;
                 }
 
                 .legal a {
                     color: #424b5b !important;
                     font-weight: 400;
                 }
-                 .legal a:hover {
+
+                .legal a:hover {
                     color: #646f84 !important;
                     border-bottom: #646f84 solid 1px !important;
                 }
-                .line{
+
+                .line {
                     border-top: 2px solid #090b11;
                 }
             }
 
             /* END  Dark Mode Support */
         </style>
+        <!--[if (gte mso 9)|(IE)]>
+		<style type="text/css">
+			table {border-collapse: collapse !important;}
+		</style>
+	<![endif]-->
+
+
+        <!-- [if mso]>
+    <style type="text/css">
+        body, table, td, .mobile-text {
+            font-family: 'Roboto', Helvetica, Verdana, Arial, sans-serif !important;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+    </style>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG />
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif] -->
+
     </head>
 
     <body bgcolor="#f1f0f0" class="darkmode-bg"
         style="background-color:#f1f0f0; margin:0; padding:0;-webkit-font-smoothing:antialiased;width:100% !important;-webkit-text-size-adjust:none;"
         topmargin="0">
-        <div style="font-size:1px; color:#f1f0f0; display:none; overflow:hidden; visibility:hidden;">See the
-            members-only benefits you&#8217;ve already got access to.
+
+        <div class="preview-text"
+            style="font-size:1px; color:#f1f0f0; display:none; overflow:hidden; visibility:hidden;">Preview text
+            consists of 35 to 90 characters
             &nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
         </div>
-        <table width="100%" class="darkmode-bg" bgcolor="#f1f0f0" style="background-color:#f1f0f0;" border="0" cellpadding="0"
-            cellspacing="0" role="presentation">
-            <tr>
+
+        <table class="background-area" width="100%" class="darkmode-bg" bgcolor="#f1f0f0"
+            style="background-color:#f1f0f0;" border="0" cellpadding="0" cellspacing="0" role="presentation">
+
+
+            <tr id="speacer-header">
                 <td>
-                    <table class="full-width spacer" align="center" width="600" border="0" cellpadding="0"
-                        cellspacing="0" role="presentation" style="width:600px;">
-                        <tr>
-                            <td class="web-only" align="right" style="  padding-top:32px; padding-bottom:9px;">
-                                <a href="https://www.mailhydra.com/" alias="Read Online" target="_blank"
-                                    style="color:#2f4eae; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:11px; line-height:13px;">View
-                                    online</a>
-                            </td>
-                        </tr>
-                    </table>
+                    <center>
+
+                          <!--[if (gte mso 9)|(IE)]>
+                              <table width="600" align="center" style="border-spacing:0;color:#fafafa;" role="presentation">
+                                  <tr>
+                                        <td style="padding:0;">
+                          <![endif]-->
+                        <table class="spacer  darkmode-bg" bgcolor="#f1f0f0"
+                            style="background-color:#f1f0f0; max-width: 600px;" align="center" width="100%" border="0"
+                            cellpadding="0" cellspacing="0" role="presentation">
+                            <tr>
+                                <td class="web-only" align="right" style="  padding-top:32px; padding-bottom:9px;">
+                                    <a href="https://www.mailhydra.com/" alias="Read Online" target="_blank"
+                                        style="color:#2f4eae; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:11px; line-height:13px;">View
+                                        online</a>
+                                </td>
+                            </tr>
+                        </table>
+                           <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                               </tr>
+                            </table>
+                          <![endif]-->
+
+                    </center>
                 </td>
             </tr>
 
@@ -282,63 +321,85 @@
             <tr>
                 <td>
                     <center>
-                        <table class="full-width content" width="600" align="center" border="0" cellpadding="0" cellspacing="0"
-                            bgcolor="#fafafa" role="presentation"
+
+
+                        <!--[if (gte mso 9)|(IE)]>
+                              <table width="600" align="center" style="border-spacing:0;color:#fafafa;" role="presentation">
+                                  <tr>
+                                        <td style="padding:0;">
+                          <![endif]-->
+
+
+
+
+                        <table class="full-width content" width="100%" align="center" border="0" cellpadding="0"
+                            cellspacing="0" bgcolor="#fafafa" role="presentation"
                             style="max-width: 600px; box-shadow:5px 5px 20px rgba(0, 0, 0, .15);  background-color: #fafafa;">
-
-
-
 
                             <tr>
                                 <td>
-                                    <!-- header -->
-                                    <table class="full-width content" align="center" width="600" border="0" cellpadding="0"
-                                        cellspacing="0" role="presentation" bgcolor="#ffffff"
-                                        style="background-color:#fafafa; width:600px;">
-                                        <tr>
-                                            <td class="logo light-only" width="560" height="80" align="right" valign="center"
-                                                style="color:#ffffff; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; text-align:right; width:560px;">
-                                                <img alt="MailHydra logo" src="https://www.mailhydra.com/img/logo-top-tag-white.png"
-                                                    width="50" height="80" border="0" hspace="0" vspace="0"
-                                                    style="background-color:#121625; display:inline-block; vertical-align:top;" />
-                                            </td>
 
-                                            <td class="logo dark-only" width="560" height="80" align="right" valign="center"
-                                            style="color:#ffffff; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; text-align:right; width:560px; display:none;">
-                                            <img alt="Adobe" src="https://www.mailhydra.com/img/logo-top-tag-white-rose.png"
-                                                width="50" height="80" border="0" hspace="0" vspace="0"
-                                                style="background-color:#121625; display:inline-block; vertical-align:top;" />
-                                        </td>
+                                                                       <!-- header -->
+                                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="600" align="center" style="border-spacing:0;color:#fafafa;" role="presentation">
+                                  <tr>
+                                        <td style="padding:0;">
+                          <![endif]-->
+                          <table class="full-width content" align="center" width="100%" border="0"
+                          cellpadding="0" cellspacing="0" role="presentation" bgcolor="#ffffff"
+                          style="background-color:#fafafa; max-width: 600;">
+                          <tr>
+                              <td class="logo light-only" width="560" height="80" align="right"
+                                  valign="center"
+                                  style="color:#ffffff; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; text-align:right; width:560px;">
+                                  <img alt="MailHydra logo"
+                                      src="https://www.mailhydra.com/img/logo-top-tag-white.png"
+                                      width="50" height="80" border="0" hspace="0" vspace="0"
+                                      style="background-color:#121625; display:inline-block; vertical-align:top;" />
+                              </td>
+
+                              <td class="logo dark-only" width="560" height="80" align="right"
+                                  valign="center"
+                                  style="color:#ffffff; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:12px; line-height:18px; text-align:right; width:560px; display:none;">
+                                  <img alt="mail hydra logo"
+                                      src="https://www.mailhydra.com/img/logo-top-tag-white-rose.png"
+                                      width="50" height="80" border="0" hspace="0" vspace="0"
+                                      style="background-color:#121625; display:inline-block; vertical-align:top;" />
+                              </td>
 
 
-                                            <td width="40" style="width:40px;">&nbsp;</td>
-                                        </tr>
-                                    </table>
-                                    <!--END header -->
+                              <td width="40" style="width:40px;">&nbsp;</td>
+                          </tr>
+                      </table>
+                      <!--[if (gte mso 9)|(IE)]>
+                      </td>
+                  </tr>
+              </table>
+            <![endif]-->
+
+                      <!--END header -->
 
 
-                                    <table class="full-width" align="center" width="500" border="0" cellpadding="0"
+
+
+                                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="500" align="center" style="border-spacing:0;color:#fafafa;" role="presentation">
+                                  <tr>
+                                        <td style="padding:0;">
+                          <![endif]-->
+                                    <table class="full-width" align="center" width="100%" border="0" cellpadding="0"
                                         cellspacing="0" role="presentation" style="max-width:500px;">
 
                                         <tr>
                                             <td align="left" class="content"
-                                                style="color:#202020; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:28px; font-weight:900; line-height:28px; padding: 50px 15px 20px 15px;">
-                                               Welcome, Mark</td>
+                                                style="color:#202020; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:28px; font-weight:900; line-height:28px; padding: 80px 15px 20px 15px;">
+                                                Welcome, Mark</td>
                                         </tr>
 
                                         <tr class="paragraph">
                                             <td class="mobile-text content" align="left"
                                                 style="color:#202020; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; padding: 20px 15px 0px 15px;">
-                                                Your online account has been created. Now you can update your account <a href="https://mailhydra.com/examples"
-                                                    target="_blank" rel="noopener noreferrer">settings</a>. </td>
-                                        </tr>
-
-                                        <tr class="paragraph">
-                                            <td class="mobile-text content" align="left"
-                                                style="color:#202020; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; padding: 20px 15px 0px 15px;">
-                                                Best regards, <br>
-                                                MailHydra Team.
-                                            </td>
+                                                Your online account has been created. Now you can update your account <a href="https://mailhydra.com/examples" target="_blank" rel="noopener noreferrer">settings</a>. </td>
                                         </tr>
 
                                         <tr>
@@ -346,15 +407,27 @@
                                         </tr>
 
                                     </table>
+                                    <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                               </tr>
+                            </table>
+                          <![endif]-->
 
 
-                                    <table class="full-width legal content" align="center" width="600" border="0"
+
+                                    <table class="full-width legal content" align="center" width="100%" border="0"
                                         cellpadding="0" cellspacing="0" role="presentation" bgcolor="#e6e6e6"
                                         style="max-width:600px; background-color:#e6e6e6;">
                                         <tr>
                                             <td  class="line">
 
-                                                <table width="500" valign="top" align="center"
+
+                                                <!--[if (gte mso 9)|(IE)]>
+                              <table width="500" align="center" style="border-spacing:0;color:#fafafa;" role="presentation">
+                                  <tr>
+                                        <td style="padding:0;">
+                                             <![endif]-->
+                                                <table width="100%" valign="top" align="center"
                                                     style="max-width: 500px;">
                                                     <tr>
                                                         <td class="content"
@@ -374,42 +447,67 @@
                                                         </td>
                                                     </tr>
                                                 </table>
+                                                <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                               </tr>
+                            </table>
+                          <![endif]-->
 
                                             </td>
                                         </tr>
-
                                     </table>
-
                                 </td>
                             </tr>
                         </table>
+
+
+
+
+                        <!--[if (gte mso 9)|(IE)]>
+                                  </td>
+                               </tr>
+                            </table>
+                          <![endif]-->
+
                     </center>
                 </td>
             </tr>
 
+            <tr id="view-online-on-mobile">
+                <td>
 
-            <tr>
-                <td class="web-only " align="right" style="  padding-top:32px; padding-bottom:9px;">
-                    &nbsp;
-                </td>
-            </tr>
-
-
-
-            <tr>
-                <td  >
-                    <table class="full-width spacer" align="center" width="600" border="0" cellpadding="0"
-                        cellspacing="0" role="presentation" style="width:600px;">
+                    <!--[if (gte mso 9)|(IE)]>
+                              <table width="500" align="center" style="border-spacing:0;color:#fafafa;" role="presentation">
+                                  <tr>
+                                        <td style="padding:0;">
+                          <![endif]-->
+                    <table class="full-width spacer" align="center" width="100%" border="0" cellpadding="0"
+                        cellspacing="0" role="presentation" style="max-width:600px;">
                         <tr>
-                            <td class="mobile-only" align="right" style="padding-top:32px; padding-bottom:9px; ">
+                            <td class="mobile-only darkmode-bg" align="right"
+                                style="padding-top:32px; padding-bottom:9px; display:none;">
                                 <a href="https://www.mailhydra.com/" alias="Read Online" target="_blank"
                                     style="color:#2f4eae; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:11px; line-height:13px; ">View
                                     online</a>
                             </td>
                         </tr>
                     </table>
+
+                    <!--[if (gte mso 9)|(IE)]>
+                         </table">
+                        </td>
+                    </tr>
+                          <![endif]-->
+
+
                 </td>
             </tr>
+
+
+            <tr class="darkmode-bg"  bgcolor="#fafafa">
+                <td height=60>&nbsp;</td>
+            </tr>
+
 
         </table>
     </body>
