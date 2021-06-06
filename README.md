@@ -2,6 +2,7 @@
 
 
 ### Coding responsive colums with HTML tables
+[References:Developing HTML Emails Using “Ghost Tables”](https://webdesign.tutsplus.com/tutorials/html-email-using-ghost-tables--cms-32551)
 
 ![Two Columns Example](https://www.mailhydra.com/img/two-columns-no-ghost-table-example.png)
 ### Columns (no ghost tables)
