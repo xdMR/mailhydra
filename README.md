@@ -3,7 +3,7 @@
 
 ### Creating columns (no ghost tables)
 
-[Two Columns Example](https://www.mailhydra.com/img/two-columns-no-ghost-table-example.png)
+![Two Columns Example](https://www.mailhydra.com/img/two-columns-no-ghost-table-example.png)
 ```html
 <tr>
     <td>
