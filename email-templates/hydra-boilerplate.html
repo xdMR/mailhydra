@@ -35,8 +35,11 @@
             p,
             li,
             td {
-                font-family: 'Roboto', sans-serif;
-                color: rgb(27, 27, 27);
+                color: rgb(32, 32, 32);
+                font-family: 'Roboto', Arial, Helvetica, sans-serif;
+                font-size: 16px;
+                line-height: 16px;
+                padding: 10px 0px 10px 0px;
             }
 
             h1,
@@ -183,7 +186,7 @@
                     text-decoration: none;
                 }
 
-                a:hover {
+                .link:hover  {
                     border-bottom: 1px solid #667fff !important;
                 }
 
@@ -202,6 +205,9 @@
 
                 .legal a:hover {
                     color: #7e7e7e !important;
+                }
+                .line {
+                    border-top: 2px solid #090b11;
                 }
             }
 
@@ -322,7 +328,7 @@
                                                 style="color:#202020; font-family:'Roboto', Arial, Helvetica, sans-serif; font-size:16px; line-height:22px; padding: 20px 15px 0px 15px;">
                                                 This email includes <strong>MailHydra Boilerplate code</strong>.
                                                 Boilerplate
-                                                is included in each of our <a
+                                                is included in each of our <a class="link"
                                                     href="https://github.com/xdMR/mailhydra/tree/main/email-templates"
                                                     target="_blank" rel="noopener noreferrer">example emails</a>. For
                                                 basic
@@ -354,7 +360,7 @@
                                         cellpadding="0" cellspacing="0" role="presentation" bgcolor="#e6e6e6"
                                         style="max-width:600px; background-color:#e6e6e6;">
                                         <tr>
-                                            <td style="border-top: 1px solid #49494e">
+                                            <td  class="line">
 
 
                                                 <!--[if (gte mso 9)|(IE)]>
