@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MailHydra</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="apple-touch-icon" sizes="57x57" href="fav-img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="fav-img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="fav-img/apple-icon-72x72.png">
@@ -24,10 +25,86 @@
     <meta name="theme-color" content="#121524">
 </head>
 <body>
-    <div style="min-width: 100vw; min-height: 100vh; background-color: #121524; display:flex;   align-items: center;
-    justify-content: center;
-    ">
-        <img src="https://www.mailhydra.com/img/mail-hydra-logo.png" style="height: auto; width: 300px;">
-    </div>
+    <main>
+        <div class="first ">
+            <div class="container">
+                <div class="lead-line" id="lead-line">
+                    Send Beautiful Emails
+                </div>
+                <div class="logo">
+                    <img src="img/mail-hydra-logo-main.svg" alt="">
+                </div>
+                <div class="three-emails" style="max-height: 75vh; text-align: center;">
+                    <img src="img/three-emails.png" class="img-resp" alt="" style="max-height: 70vh; margin:0 auto; ">
+                </div>
+            </div>
+        </div>
+
+        <div class="second" id="second">
+           <div class="container">
+            <div class="benefits">
+                <ul>
+                    <li>
+                        Works great on all devices
+                    </li>
+                    <li>Looks beautiful on mobile</li>
+                    <li>People will enjoy reading them</li>
+                    <li>Taking accessibility seriously</li>
+                    <li>Customized for best experience</li>
+                </ul>
+        </div>
+           </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+
+
+
+<style>
+    .lead-line {
+        background: linear-gradient(160deg, var(--bgColor) 0%,#c4daff 20%, #8ab5ff 50%, var(--bgColor) 100%);
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+    }
+</style>
+
+
+<script>
+    // Lead text line
+    const prices = gsap.utils.toArray('.lead-line');
+
+    prices.forEach(price => {
+        gsap.to(price, {
+            'background': 'linear-gradient(80deg, #1abfea 0%, #ed71ed 50%, #f451b6 90%)'
+            , duration: 2,
+            scrollTrigger: {
+                trigger: '.first',
+                start: '0% -10px',
+                end: '20% 0%',
+                toggleActions: "play reverse play reverse",
+                markers: true
+            }
+        })
+    })
+    // END: Lead text line
+
+
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: '#benefits',
+            scrub: true,
+            markers: true,
+            toggleActions: "play reverse play reverse"
+        }
+    })
+    tl.from(".benefits", { x: 50, opacity: 0, duration: 10 })
+
+</script>
+
+
 </body>
 </html>
