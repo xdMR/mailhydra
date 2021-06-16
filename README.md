@@ -95,3 +95,8 @@
     </td>
 </tr>
 ```
+
+When in doubt include those tags with your table element 
+```html
+<table rel="presentation" border="0" cellpadding="0" cellspacing="0">
+```
