@@ -258,6 +258,7 @@ h2 {
   .basis50 {
     flex-basis: 100%;
   }
+
 }
 
 p {
@@ -271,6 +272,10 @@ p {
   p {
     font-size: 20px;
   }
+  h2 {
+    font-size: 45px
+    ;}
+
   .bolded {
     font-weight: 900;
     color: white;
