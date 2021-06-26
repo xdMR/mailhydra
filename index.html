@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,8 +25,14 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#121524">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+
+    <!-- or the reference on CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+
 </head>
+
 <body>
     <main>
         <div class="first ">
@@ -42,75 +49,251 @@
             </div>
         </div>
 
-        <div class="second" id="second">
-           <div class="container-wide">
-            <div class="benefits flex" style="justify-content: space-between; flex-wrap: wrap;">
-                <style>
-                    .left{
-                        margin-right: 50px;
-                    }
-               </style>
-                <div class="left">
-                    <ul>
-                        <li>Emails people will look forward too</li>
-                        <li>
-                            Emails that work great on all devices
-                        </li>
-                        <li>Customized for the best experience </li>
-                    </ul>
+        <div class="second trigger" id="second">
+            <div class="container-wide">
+                <div class="benefits flex" style="justify-content: space-between; flex-wrap: wrap;">
+                    <div class="left basis50">
+                        <ul>
+                            <li>Emails people will look forward too</li>
+                            <li>
+                                Emails that work great on all devices
+                            </li>
+                            <li>Customized for the best experience </li>
+                        </ul>
+                    </div>
+                    <div class="right basis50">
+                        <ul>
+                            <li>Beautiful on mobile</li>
+                            <li>Amazing reading experience </li>
+                            <li>Taking accessibility seriously</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="right">
-                    <ul>
-                        <li>Beautiful on mobile</li>
-                        <li>Amazing reading experience </li>
-                        <li>All while taking accessibility seriously</li>
-                    </ul>
-                </div>
+
+
+            </div>
         </div>
 
 
-           </div>
+<div class="second">
+    <div class="container-wide">
+        <div id="image-slider" class="splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="img/email-example-1.png" class="img-resp">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/email-example-2.png" class="img-resp">
+                    </li>
+                    <li class="splide__slide">
+                        <img src="img/email-example-3.png" class="img-resp">
+                    </li>
+                </ul>
+            </div>
         </div>
+    </div>
+</div>
 
-
-
-        <div class="second ">
-            <div class="text-center">
+        <div class=" second ">
+            <div class=" text-center">
                 <h2>Attention to details</h2>
-                <img src="img/details-mail-hydra.png" class="img-resp" alt="" style= margin:0 auto; ">
+                <img src="img/details-mail-hydra.png" class="img-resp" alt="" style=margin:0 auto; ">
             </div>
         </div>
 
-        <div class="second ">
-          <div class="container flex">
-            <div class="left basis40">
-                <h2 class="">Advanced dark&#8209;mode <br> support</h2>
-               <p class="text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo totam enim excepturi dignissimos architecto fugiat consequuntur dolore quisquam vero.</p>
+
+
+
+        <div class=" second ">
+          <div class=" container flex">
+                <div class="left basis40">
+                    <h2 class="">Advanced dark&#8209;mode <br> support</h2>
+                    <p class="text-white"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo totam enim
+                        excepturi dignissimos architecto fugiat consequuntur dolore quisquam vero.</p>
+                </div>
+                <div class="right basis60">
+                    <img src="img/dark-mode-support.png" class="img-resp" alt="" style=margin:0 auto; ">
             </div>
-            <div class="right basis60">
-                <img src="img/dark-mode-support.png" class="img-resp" alt="" style= margin:0 auto; ">
-            </div>
+
           </div>
-
-          <div class="container-wide flex">
-            <div class="left basis50">
-                <img src="img/burning-eyes.png" class="img-resp" alt="" style= margin:0 auto; ">
+          <div class=" container">
+                    <img src="img/light-to-dark-show.png" class="img-resp ">
+                </div>
             </div>
-            <div class="right basis50">
-                <p class="text-white"> <span class="bolded">Stop the burning brightness!</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem commodi soluta reiciendis architecto voluptatum illum veniam earum repellat iure pariatur nostrum sit, minus odio molestiae ex sequi totam impedit iste.</p>
-                <p > Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis magni necessitatibus illum saepe voluptate, tempore iste nobis! Excepturi, praesentium nostrum.</p>
+
+
+            <div class=" second">
+                <div class="container-wide flex">
+                    <div class="left basis50">
+                        <img src="img/burning-eyes.png" class="img-resp" alt="" style=margin:0 auto; ">
+                        </div>
+                <div class=" right basis50">
+                        <p class="text-white"> <span class="bolded">Stop the burning brightness!</span> Lorem ipsum
+                            dolor sit amet consectetur adipisicing elit. Dolorem commodi soluta reiciendis
+                            architecto voluptatum illum veniam earum repellat iure pariatur nostrum sit, minus odio
+                            molestiae ex sequi totam impedit iste.</p>
+                        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis magni
+                            necessitatibus illum saepe voluptate, tempore iste nobis! Excepturi, praesentium
+                            nostrum.</p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-        </div>
+            <div class="second">
+                <div class="container">
+                    <img src="img/bright-text.svg" class="img-resp" alt="" style="max-height: 70vh; margin:0 auto; ">
+                </div>
+                <div class="container text-left flex">
+                    <div class="left">
+                        <p>Pure white on pure black looks jarring, and it's almost painful to look at night.</p>
 
-        <div class="first text-center">
-            <img src="img/column-code.png" class="img-resp" alt="" style="max-height: 70vh; margin:0 auto; ">
-        </div>
+                    </div>
+                    <div class="right">
+                        <p>Off-white and on off-black will create enjoyable learning experience.</p>
 
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="second">
+
+                <div class="container flex">
+                    <div class="left basis40">
+                        <h2 class="">Accessibility </h2>
+                        <p class="text-white"> Our email desing is accessible and screen-reader friendly.</p>
+                        <p class="text-white"> We always use <br></p>
+                        <ul>
+                            <li>
+                                <p class="text-white"><strong>Large Fonts</strong> and</p>
+                            </li>
+                            <li>
+                                <p class="text-white"><strong>Hight Contrast</strong></p>
+                            </li>
+                        </ul>
+                        <p>for the most imporant parts of your content.</p>
+                    </div>
+                    <div class="right basis60">
+                        <img src="img/dark-mode-support.png" class="img-resp" alt="" style=margin:0 auto; ">
+                      </div>
+                    </div>
+                </div>
+
+                <div class=" second">
+                        <div class=" container flex">
+                            <div class="left basis70">
+                                <img src="img/accessibility-code.png" class="img-resp" alt="" style=margin:0 auto; ">
+                        </div>
+                        <div class=" right basis30">
+                                <p class="text-white"> Properly assigned HTML attributes ensure screen-reader safe
+                                    content.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class=" second text-center">
+                        <div class="container">
+                            <img src="img/column-code.png" class="img-resp" alt=""
+                                style="max-height: 70vh; margin:0 auto; ">
+                        </div>
+                    </div>
+
+                    <div class="second">
+                        <div class="container text-center">
+                            <h2>Order Custom Email</h2>
+                            <p class="teal-text" style=" font-size: 36px;
+                            font-weight: 300 !important;">From $999 | Estimate by Audience Size</p>
+                        </div>
+                        <div class="container text-center ">
+                            <p class="teal-text">up to 1000 | $999 </p>
+                            <p class="teal-text">1000  to 10k | <span class="crossed">$1500 </span> <span class="red-text">$999</span><p class="red-text"></p></p>
+                            <p class="teal-text">1000  to 10k | <span class="crossed">$1500 </span> <span class="red-text">$999</span><p class="red-text"></p></p>
+                            <p class="teal-text">10k to 100k | $3000
+                                <span class="crossed">$1500 <span class="red-text">$999</span></span> </p>
+                        </div>
+
+                    </div>
+                    <div class="second" id="download">
+                        <div class="container text-center">
+                            <h2>Download for free</h2>
+                            <p class="text-white">Contribution only!</p>
+                        </div>
+                        <div class=" container flex">
+                            <div class="left basis50 text-center">
+                                <div class="download-link-wrapper">
+                                    <a href="https://github.com/xdMR/mailhydra/blob/main/email-templates/hydra-boilerplate.html"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <svg width="32" height="32" class="letter_icon" data-name="Capa 1"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 404">
+                                            <path
+                                                d="M520.32,29.49H41A16.33,16.33,0,0,0,24.66,45.83V417.15A16.34,16.34,0,0,0,41,433.49H520.32a16.35,16.35,0,0,0,16.34-16.34V45.83A16.34,16.34,0,0,0,520.32,29.49Zm-31.66,32a15.86,15.86,0,0,1,6.13,1.24L280.66,248.32,66.53,62.73a15.83,15.83,0,0,1,6.13-1.24Zm0,340h-432v-305l213.51,185a16,16,0,0,0,21,0l213.52-185v289A16,16,0,0,1,488.66,401.49Z"
+                                                transform="translate(-24.66 -29.49)" />
+                                        </svg>
+                                        Hydra boilerplate
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="right basis50 text-center">
+                                <div class="download-link-wrapper">
+                                    <a href="https://github.com/xdMR/mailhydra/blob/main/email-templates/hydra-two-columns.html"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <svg width="32" height="32" class="letter_icon" data-name="Capa 1"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 404">
+                                            <path
+                                                d="M520.32,29.49H41A16.33,16.33,0,0,0,24.66,45.83V417.15A16.34,16.34,0,0,0,41,433.49H520.32a16.35,16.35,0,0,0,16.34-16.34V45.83A16.34,16.34,0,0,0,520.32,29.49Zm-31.66,32a15.86,15.86,0,0,1,6.13,1.24L280.66,248.32,66.53,62.73a15.83,15.83,0,0,1,6.13-1.24Zm0,340h-432v-305l213.51,185a16,16,0,0,0,21,0l213.52-185v289A16,16,0,0,1,488.66,401.49Z"
+                                                transform="translate(-24.66 -29.49)" />
+                                        </svg>
+                                        Hydra Columns
+                                    </a>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class=" container flex">
+                            <div class="left basis50 text-center">
+                                <div class="download-link-wrapper">
+                                    <a href="https://github.com/xdMR/mailhydra/blob/main/email-templates/uberrenting-email.html"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <svg width="32" height="32" class="letter_icon" data-name="Capa 1"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 404">
+                                            <path
+                                                d="M520.32,29.49H41A16.33,16.33,0,0,0,24.66,45.83V417.15A16.34,16.34,0,0,0,41,433.49H520.32a16.35,16.35,0,0,0,16.34-16.34V45.83A16.34,16.34,0,0,0,520.32,29.49Zm-31.66,32a15.86,15.86,0,0,1,6.13,1.24L280.66,248.32,66.53,62.73a15.83,15.83,0,0,1,6.13-1.24Zm0,340h-432v-305l213.51,185a16,16,0,0,0,21,0l213.52-185v289A16,16,0,0,1,488.66,401.49Z"
+                                                transform="translate(-24.66 -29.49)" />
+                                        </svg>
+                                        Hydra Shop
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="right basis50 text-center">
+                                <div class="download-link-wrapper">
+                                    <a href="https://github.com/xdMR/mailhydra/blob/main/email-templates/hydra-Welcome.html"
+                                        target="_blank" rel="noopener noreferrer">
+                                        <svg width="32" height="32" class="letter_icon" data-name="Capa 1"
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 404">
+                                            <path
+                                                d="M520.32,29.49H41A16.33,16.33,0,0,0,24.66,45.83V417.15A16.34,16.34,0,0,0,41,433.49H520.32a16.35,16.35,0,0,0,16.34-16.34V45.83A16.34,16.34,0,0,0,520.32,29.49Zm-31.66,32a15.86,15.86,0,0,1,6.13,1.24L280.66,248.32,66.53,62.73a15.83,15.83,0,0,1,6.13-1.24Zm0,340h-432v-305l213.51,185a16,16,0,0,0,21,0l213.52-185v289A16,16,0,0,1,488.66,401.49Z"
+                                                transform="translate(-24.66 -29.49)" />
+                                        </svg>
+                                        Hydra Welcome
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
 
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/PixiPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollToPlugin.min.js"></script>
@@ -118,47 +301,105 @@
 
 
 
-<style>
-    .lead-line {
-        background: linear-gradient(160deg, var(--bgColor) 0%,#c4daff 20%, #8ab5ff 50%, var(--bgColor) 100%);
-        -webkit-background-clip: text !important;
-        -webkit-text-fill-color: transparent !important;
-    }
-</style>
-
-
-<script>
-    // Lead text line
-    const prices = gsap.utils.toArray('.lead-line');
-
-    prices.forEach(price => {
-        gsap.to(price, {
-            'background': 'linear-gradient(80deg, #1abfea 0%, #ed71ed 50%, #f451b6 90%)'
-            , duration: 2,
-            scrollTrigger: {
-                trigger: '.first',
-                start: '0% -10px',
-                end: '20% 0%',
-                toggleActions: "play reverse play reverse",
-                markers: true
-            }
-        })
-    })
-    // END: Lead text line
-
-
-    let tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: '#benefits',
-            scrub: true,
-            markers: true,
-            toggleActions: "play reverse play reverse"
+    <style>
+        .lead-line {
+            background: linear-gradient(160deg, var(--bgColor) 0%, #c4daff 20%, #8ab5ff 50%, var(--bgColor) 100%);
+            -webkit-background-clip: text !important;
+            -webkit-text-fill-color: transparent !important;
         }
-    })
-    tl.from(".benefits", { x: 50, opacity: 0, duration: 10 })
+    </style>
 
-</script>
 
+    <script>
+        // Lead text line
+        // const prices = gsap.utils.toArray('.lead-line');
+
+        // prices.forEach(price => {
+        //     gsap.to(price, {
+        //         'background': 'linear-gradient(80deg, #1abfea 0%, #ed71ed 50%, #f451b6 90%)'
+        //         , duration: 2,
+        //         scrollTrigger: {
+        //             trigger: '.first',
+        //             start: '0% -10px',
+        //             end: '20% 0%',
+        //             toggleActions: "play reverse play reverse",
+        //             markers: true
+        //         }
+        //     })
+        // })
+        // END: Lead text line
+
+
+        // let tl = gsap.timeline({
+        //     scrollTrigger: {
+        //         trigger: '.triger',
+        //         scrub: true,
+        //         start: 'top',
+        //         end:'top',
+        //         markers: true,
+        //         toggleActions: "play reverse play reverse"
+        //     }
+        // })
+        // tl.from(".benefits", { x: 50, opacity: 0, duration: 10 })
+
+
+        gsap.from(".benefits", {
+            scrollTrigger: {
+                trigger: ".benefits",
+                start: "-=500", // when the top of the trigger hits the top of the viewport
+                end: "+=500", // end after scrolling 500px beyond the start
+                scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+                toggleActions: "play reverse play reverse"
+            },
+            markers: true,
+            duration: 4,
+            x: 20,
+            opacity: 0
+        });
+
+        // let tl = gsap.timeline({
+        //     // yes, we can add it to an entire timeline!
+        //     scrollTrigger: {
+        //         trigger: ".benefits",
+        //         start: "top top", // when the top of the trigger hits the top of the viewport
+        //         end: "+=500", // end after scrolling 500px beyond the start
+        //         scrub: 1, // smooth scrubbing, takes 1 second to "catch up" to the scrollbar
+        //     }
+        // });
+
+        // add animations and labels to the timeline
+        tl.addLabel("start")
+            .from(".benefits", { scale: 0.3, rotation: 45, autoAlpha: 0 })
+            .addLabel("color")
+            .from(".box", { backgroundColor: "#28a92b" })
+            .addLabel("spin")
+            .to(".benefits", { rotation: 360 })
+            .addLabel("end");
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+
+        <!-- Initialize splider -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                new Splide('.splide', {
+                    type: 'loop',
+                    perPage: 1,
+                    perMove: 1,
+                    autoplay: true,
+                    padding: {
+                        right: '0',
+                        left: '0',
+                    },
+                    arrows: true
+                }).mount();
+            });
+
+
+        </script>
 
 </body>
+
 </html>
