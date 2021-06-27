@@ -151,9 +151,19 @@ li {
   background-color: var(--bgColor);
   min-height: 100vh;
 }
+@media only screen and (max-width: 800px) {
+  .first {
+    padding-top:15vh;
+    background-color: var(--bgColor);
+    min-height: 0;
+  }
+}
 .second {
   padding-top: 100px;
   padding-bottom: 100px;
+  background-color: var(--bgColor);
+}
+.dark-bg {
   background-color: var(--bgColor);
 }
 
@@ -258,6 +268,9 @@ h2 {
   .basis50 {
     flex-basis: 100%;
   }
+  .right{
+    padding-left:0px;
+  }
 
 }
 
@@ -272,9 +285,9 @@ p {
   p {
     font-size: 20px;
   }
-  h2 {
-    font-size: 45px
-    ;}
+  h2{
+    font-size: 45px;
+  }
 
   .bolded {
     font-weight: 900;
